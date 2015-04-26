@@ -12,5 +12,22 @@ Tasks: Completed objects.js including lastReceivedMessage()
 
 
 Start: Thur, 23 Apr 2015 20:58:00 -0800
-End: 
-Tasks: 
+End: Thur, 23 Apr 2015 22:22:00 -0800
+Tasks: Created general layout and successfully aquired gists.
+
+Start: Friday, 24 Apr 2015 20:08:00 -0800
+End: Friday, 24 Apr 2015 21:09:00 -0800
+Tasks: Working on parsing gists
+
+
+Start: Saturday, 25 Apr 2015 20:07:00 -0800
+End: Saturday, 25 Apr 2015 21:55:00 -0800
+Tasks: Worked on creating html elements from gists
+
+Start: Sunday, 25 Apr 2015 08:22:00 -0800
+End: Sunday, 25 Apr 2015 15:17:00 -0800
+Tasks: Just need to figure out deleting previous table and links
+
+Start: Sunday, 25 Apr 2015 15:42:00 -0800
+End: Sunday, 25 Apr 2015 16:47:00 -0800
+Tasks: Figured the links out.  Now still trying to figure out how to delete table.
