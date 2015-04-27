@@ -2,6 +2,7 @@ var originalGistList = [];
 var gistlist = [];
 var favoriteGists = [];
 
+// var table;
 function getGists()
 {
 	var req = new XMLHttpRequest();
@@ -25,6 +26,13 @@ function getGists()
 						gistlist[gistlist.length] = newgist;
 						
 				}
+//					var gists = document.getElementById("gists");
+//					if (isgTable == 1)
+//					{
+//						var blanktable = document.createElement("table");
+//						gists.removeChild(table);
+//						gists.appendChild(blanktable);
+//					}
 
 				var gists = document.getElementById("gists");
 				var table = document.createElement("table");
@@ -97,7 +105,9 @@ function getGists()
 	};
 	req.open('GET', url, true);
 	req.send();
+//	isgtable = 1;
 }
+// var isgtable = 0;
 
 function findgistbyid(gistID)
 {
@@ -119,15 +129,21 @@ function findfavbyid (gistID)
 		}
 	}
 }
+var table;
 function displayFavorites()
 {
 	var gists = document.getElementById("favored-gists");
+	if (isTable == 1)
+	{
+		var blanktable = document.createElement("table");
+		gists.removeChild(table);
+		gists.appendChild(blanktable);
+	}
+	console.log("In display favorites");
 	
-	var table = document.createElement("table");
-	table.innerHTML = '<id = "favtable"/>';
-	var newtable = document.getElementById("favtable");
+
+	table = document.createElement("table");
 	var tbleBody = document.createElement("tbody");
-	tbleBody.innerHTML = '<id = "favbody"/>';
 				
 	for (var i=0; i < favoriteGists.length; i++)
 	{
@@ -150,6 +166,8 @@ function displayFavorites()
 						var gistIndex = findfavbyid(gistID)
 						favoriteGists.splice(gistIndex,1);
 						displayFavorites();
+						localStorage.clear();
+						localStorage.setItem('userSettings', JSON.stringify(favoriteGists));
 //						getGists();
 					}	
 					removeFavorite(gistID);
@@ -175,16 +193,9 @@ function displayFavorites()
 	table.appendChild(tbleBody);
 	gists.appendChild(table);
 	table.setAttribute("border", "2");
-	var isTable = 1;
-	
-//	console.log ("There is a table");
-//	var oldtable = document.getElementById("favtable");
-//	var oldbody = document.getElementById("favbody");
-//	var blankbody = document.createElement("tbody");
-//	oldtable.replaceChild(blankbody, oldbody);
-//	oldbody.oldtable.removeChild(oldbody);
-
+	isTable = 1;
 }
+var isTable = 0;
 window.onload = function()
 {
 	var settingStr = localStorage.getItem('userSettings');
