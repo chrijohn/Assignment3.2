@@ -168,7 +168,7 @@ function displayFavorites()
 						displayFavorites();
 						localStorage.clear();
 						localStorage.setItem('userSettings', JSON.stringify(favoriteGists));
-//						getGists();
+						getGists();
 					}	
 					removeFavorite(gistID);
 				}

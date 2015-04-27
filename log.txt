@@ -31,3 +31,12 @@ Tasks: Just need to figure out deleting previous table and links
 Start: Sunday, 25 Apr 2015 15:42:00 -0800
 End: Sunday, 25 Apr 2015 16:47:00 -0800
 Tasks: Figured the links out.  Now still trying to figure out how to delete table.
+
+Start: Sunday, 25 Apr 2015 15:42:00 -0800
+End: Sunday, 25 Apr 2015 16:47:00 -0800
+Tasks: Figured the links out.  Now still trying to figure out how to delete table.
+
+
+Start: Sunday, 25 Apr 2015 17:37:00 -0800
+End: Sunday, 25 Apr 2015 19:36:00 -0800
+Tasks: figued out deleting favorites list. No idea what's wrong with gist table though.  Attempts to fix it causes more significant issues.
